@@ -57,6 +57,11 @@ export const PlasmicFooter__ArgProps = new Array<ArgPropType>();
 export type PlasmicFooter__OverridesType = {
   root?: p.Flex<"div">;
   textbox?: p.Flex<"input">;
+  iconLink?: p.Flex<typeof IconLink>;
+  socialIcons?: p.Flex<"div">;
+  socialIcon1?: p.Flex<typeof IconLink>;
+  socialIcon2?: p.Flex<typeof IconLink>;
+  socialIcon3?: p.Flex<typeof IconLink>;
 };
 
 export interface DefaultFooterProps {
@@ -361,7 +366,9 @@ function PlasmicFooter__RenderFunc(props: {
             />
 
             <IconLink
-              className={classNames("__wab_instance", sty.iconLink__hwIJw)}
+              data-plasmic-name={"iconLink"}
+              data-plasmic-override={overrides.iconLink}
+              className={classNames("__wab_instance", sty.iconLink)}
               icon={
                 <LocationArrowIcon
                   className={classNames(defaultcss.all, sty.svg__ibRaU)}
@@ -376,11 +383,15 @@ function PlasmicFooter__RenderFunc(props: {
       <div className={classNames(defaultcss.all, sty.box__jeONq)}>
         <p.Stack
           as={"div"}
+          data-plasmic-name={"socialIcons"}
+          data-plasmic-override={overrides.socialIcons}
           hasGap={true}
-          className={classNames(defaultcss.all, sty.box__e4Dkz)}
+          className={classNames(defaultcss.all, sty.socialIcons)}
         >
           <IconLink
-            className={classNames("__wab_instance", sty.iconLink__tqrS7)}
+            data-plasmic-name={"socialIcon1"}
+            data-plasmic-override={overrides.socialIcon1}
+            className={classNames("__wab_instance", sty.socialIcon1)}
             icon={
               <FacebookIcon
                 className={classNames(defaultcss.all, sty.svg___3OttI)}
@@ -390,7 +401,9 @@ function PlasmicFooter__RenderFunc(props: {
           />
 
           <IconLink
-            className={classNames("__wab_instance", sty.iconLink__v3Kw)}
+            data-plasmic-name={"socialIcon2"}
+            data-plasmic-override={overrides.socialIcon2}
+            className={classNames("__wab_instance", sty.socialIcon2)}
             icon={
               <InstagramIcon
                 className={classNames(defaultcss.all, sty.svg__zlvP)}
@@ -400,7 +413,9 @@ function PlasmicFooter__RenderFunc(props: {
           />
 
           <IconLink
-            className={classNames("__wab_instance", sty.iconLink__gEuow)}
+            data-plasmic-name={"socialIcon3"}
+            data-plasmic-override={overrides.socialIcon3}
+            className={classNames("__wab_instance", sty.socialIcon3)}
             icon={
               <LinkedinIcon
                 className={classNames(defaultcss.all, sty.svg__tEv2)}
@@ -457,8 +472,21 @@ function PlasmicFooter__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "textbox"],
-  textbox: ["textbox"]
+  root: [
+    "root",
+    "textbox",
+    "iconLink",
+    "socialIcons",
+    "socialIcon1",
+    "socialIcon2",
+    "socialIcon3"
+  ],
+  textbox: ["textbox"],
+  iconLink: ["iconLink"],
+  socialIcons: ["socialIcons", "socialIcon1", "socialIcon2", "socialIcon3"],
+  socialIcon1: ["socialIcon1"],
+  socialIcon2: ["socialIcon2"],
+  socialIcon3: ["socialIcon3"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<
@@ -467,6 +495,11 @@ type DescendantsType<
 type NodeDefaultElementType = {
   root: "div";
   textbox: "input";
+  iconLink: typeof IconLink;
+  socialIcons: "div";
+  socialIcon1: typeof IconLink;
+  socialIcon2: typeof IconLink;
+  socialIcon3: typeof IconLink;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -525,6 +558,11 @@ export const PlasmicFooter = Object.assign(
   {
     // Helper components rendering sub-elements
     textbox: makeNodeComponent("textbox"),
+    iconLink: makeNodeComponent("iconLink"),
+    socialIcons: makeNodeComponent("socialIcons"),
+    socialIcon1: makeNodeComponent("socialIcon1"),
+    socialIcon2: makeNodeComponent("socialIcon2"),
+    socialIcon3: makeNodeComponent("socialIcon3"),
 
     // Metadata about props expected for PlasmicFooter
     internalVariantProps: PlasmicFooter__VariantProps,

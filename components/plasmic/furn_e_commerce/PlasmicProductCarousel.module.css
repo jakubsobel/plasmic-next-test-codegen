@@ -99,6 +99,9 @@
   position: relative;
   flex-shrink: 0;
 }
+.box__vtWCc {
+  height: auto;
+}
 .box__vdkmn {
   display: flex;
   position: relative;

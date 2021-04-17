@@ -222,7 +222,17 @@ function PlasmicProductCarousel__RenderFunc(props: {
 
             <LinkButton
               className={classNames("__wab_instance", sty.linkButton__qwVa1)}
-              text={"More Info"}
+              text={
+                <div
+                  className={classNames(
+                    defaultcss.all,
+                    defaultcss.__wab_text,
+                    sty.box__vtWCc
+                  )}
+                >
+                  {"More Info"}
+                </div>
+              }
               type={"blankOrange" as const}
             />
           </p.Stack>
