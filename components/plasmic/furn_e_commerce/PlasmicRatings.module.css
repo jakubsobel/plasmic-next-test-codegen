@@ -1,0 +1,117 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 200px;
+}
+.root > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.root > :global(.__wab_flex-container) > *,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 8px;
+}
+.box {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+.box > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin-left: calc(0px - 5px);
+  width: calc(100% + 5px);
+}
+.box > :global(.__wab_flex-container) > *,
+.box > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 5px;
+}
+.svg__klTz3 {
+  position: relative;
+  object-fit: cover;
+  width: 14px;
+  height: 14px;
+  color: rgb(239, 206, 74) /* plasmic-token: xDNY3eFF6FlU8v */;
+  flex-shrink: 0;
+}
+.svg__koRjv {
+  position: relative;
+  object-fit: cover;
+  width: 14px;
+  height: 14px;
+  color: rgb(239, 206, 74) /* plasmic-token: xDNY3eFF6FlU8v */;
+  flex-shrink: 0;
+}
+.svg__xIyGo {
+  position: relative;
+  object-fit: cover;
+  width: 14px;
+  height: 14px;
+  color: rgb(239, 206, 74) /* plasmic-token: xDNY3eFF6FlU8v */;
+  flex-shrink: 0;
+}
+.svg__uxTMw {
+  position: relative;
+  object-fit: cover;
+  width: 14px;
+  height: 14px;
+  color: rgb(239, 206, 74) /* plasmic-token: xDNY3eFF6FlU8v */;
+  flex-shrink: 0;
+}
+.svg___4QkEg {
+  position: relative;
+  object-fit: cover;
+  width: 14px;
+  height: 14px;
+  color: rgb(239, 206, 74) /* plasmic-token: xDNY3eFF6FlU8v */;
+  flex-shrink: 0;
+}
+.svg___1SNyK {
+  position: relative;
+  object-fit: cover;
+  width: 14px;
+  height: 14px;
+  color: rgb(169, 169, 169) /* plasmic-token: qGE1_UF5jQ3PVZ */;
+  flex-shrink: 0;
+}
+.svg__c8Eup {
+  position: relative;
+  object-fit: cover;
+  width: 14px;
+  height: 14px;
+  color: rgb(169, 169, 169) /* plasmic-token: qGE1_UF5jQ3PVZ */;
+  flex-shrink: 0;
+}
+.svg__qCpov {
+  position: relative;
+  object-fit: cover;
+  width: 14px;
+  height: 14px;
+  color: rgb(169, 169, 169) /* plasmic-token: qGE1_UF5jQ3PVZ */;
+  flex-shrink: 0;
+}
+.svg__xfz6H {
+  position: relative;
+  object-fit: cover;
+  width: 14px;
+  height: 14px;
+  color: rgb(169, 169, 169) /* plasmic-token: qGE1_UF5jQ3PVZ */;
+  flex-shrink: 0;
+}
+.svg___0R4Ut {
+  position: relative;
+  object-fit: cover;
+  width: 14px;
+  height: 14px;
+  color: rgb(169, 169, 169) /* plasmic-token: qGE1_UF5jQ3PVZ */;
+  flex-shrink: 0;
+}
+.slotNumReviews {
+  font-size: 14px;
+  color: rgb(160, 158, 156) /* plasmic-token: eWC1FU7hSq72En */;
+}
