@@ -49,7 +49,22 @@ function Footer(props: FooterProps) {
   // }}/>;
 
   // TEZ DZIALA!!!
-  return <PlasmicFooter {...props} onClick={() => alert('I got clicked!')} socialIcon1={<FacebookIcon />} socialIcon2={<LinkedinIcon />} socialIcon3={<InstagramIcon />}/>;
+  // return <PlasmicFooter {...props} socialIcons={{
+  //   children: [<FacebookIcon/>, <LinkedinIcon/>, <InstagramIcon/>].map(socialIcon => (
+  //     <PlasmicFooter.iconLink icon={socialIcon} />
+  //   ))
+  // }}/>;
+
+  // TEZ TEZ DZIALA!!!
+  return (
+    <PlasmicFooter
+      {...props}
+      onClick={() => alert('I got clicked!')}
+      socialIcon1={<FacebookIcon />}
+      socialIcon2={<LinkedinIcon />}
+      socialIcon3={<InstagramIcon />}
+    />
+  );
 }
 
 export default Footer;
